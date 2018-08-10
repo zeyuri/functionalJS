@@ -31,7 +31,8 @@ var storyWriter = function() {
     var story = '';
     return {
         addWords: function(string){
-            return story = story + string;
+            story += string + ' ';
+            return story.trim();
         },
         erase: function(){
             return story = '';
